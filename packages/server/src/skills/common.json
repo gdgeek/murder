@@ -1,0 +1,47 @@
+[
+  {
+    "id": "common-character-001",
+    "category": "character_design",
+    "name": "角色关系网络设计",
+    "description": "适用于所有游戏类型的角色关系网络构建模板",
+    "gameTypes": ["honkaku", "shin_honkaku", "henkaku"],
+    "priority": 5,
+    "content": "设计角色关系网络：确保每个角色与至少两个其他角色有直接关系（亲属、朋友、同事、对手等）。关系网络应包含明面关系和隐藏关系，部分关系只有当事人知晓。关系的复杂度应与玩家人数匹配。"
+  },
+  {
+    "id": "common-clue-001",
+    "category": "clue_design",
+    "name": "线索分层设计",
+    "description": "将线索按重要程度分层的通用设计方法",
+    "gameTypes": ["honkaku", "shin_honkaku", "henkaku"],
+    "priority": 5,
+    "content": "线索分层设计：将线索分为核心线索（必须发现才能破案）、辅助线索（帮助缩小范围）、干扰线索（合理但指向错误方向）。核心线索数量控制在3-5条，每轮至少分发1条核心线索。"
+  },
+  {
+    "id": "common-timeline-001",
+    "category": "timeline",
+    "name": "多角色时间线交叉验证",
+    "description": "通过多角色时间线的交叉点验证事件真实性",
+    "gameTypes": ["honkaku", "shin_honkaku", "henkaku"],
+    "priority": 5,
+    "content": "设计多角色时间线交叉验证：不同角色的时间线在关键节点应有交叉，这些交叉点可用于验证或推翻某个角色的陈述。设计至少3个时间线交叉点，其中至少1个包含关键矛盾。"
+  },
+  {
+    "id": "common-motive-001",
+    "category": "motive",
+    "name": "多嫌疑人动机设计",
+    "description": "为多个角色设计合理动机以增加推理难度",
+    "gameTypes": ["honkaku", "shin_honkaku", "henkaku"],
+    "priority": 5,
+    "content": "多嫌疑人动机设计：至少为3个角色设计看似合理的犯罪动机，每个动机都有对应的线索支撑。真正的犯罪动机应在深入调查后才能与其他动机区分开来。动机类型应多样化，避免雷同。"
+  },
+  {
+    "id": "common-restoration-001",
+    "category": "restoration",
+    "name": "分阶段还原框架",
+    "description": "将真相还原分为多个阶段的通用框架",
+    "gameTypes": ["honkaku", "shin_honkaku", "henkaku"],
+    "priority": 5,
+    "content": "分阶段还原框架：第一阶段确定案件基本事实（何时何地发生了什么），第二阶段确定作案手法（如何做到的），第三阶段确定犯人身份和动机（谁为什么这么做）。每个阶段对应游戏的不同轮次。"
+  }
+]

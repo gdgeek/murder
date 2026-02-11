@@ -1,0 +1,44 @@
+{
+  "common": {
+    "appName": "Murder Mystery AI Generator",
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "search": "Search",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "scripts": "Scripts",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "auth": {
+    "loginTitle": "Login",
+    "registerTitle": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "nickname": "Nickname",
+    "loginButton": "Login",
+    "registerButton": "Register",
+    "noAccount": "No account? Register",
+    "hasAccount": "Already have an account? Login"
+  },
+  "home": {
+    "welcome": "Welcome to Murder Mystery AI Generator",
+    "description": "Generate high-quality murder mystery scripts with AI and play online",
+    "createScript": "Create Script",
+    "browseScripts": "Browse Scripts",
+    "hotScripts": "Hot Scripts",
+    "latestScripts": "Latest Scripts"
+  }
+}

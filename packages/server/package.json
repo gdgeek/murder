@@ -1,0 +1,27 @@
+{
+  "name": "@murder-mystery/server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsx watch src/app.ts",
+    "test": "vitest --run",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@murder-mystery/shared": "*",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "mysql2": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/ioredis": "^4.28.10",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.2.2"
+  }
+}

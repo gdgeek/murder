@@ -1,0 +1,30 @@
+{
+  "name": "murder-mystery-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "线上剧本杀AI生成工具 - Online Murder Mystery AI Generation Tool",
+  "workspaces": [
+    "packages/shared",
+    "packages/server",
+    "packages/client"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "lint": "eslint 'packages/*/src/**/*.{ts,vue}'",
+    "lint:fix": "eslint 'packages/*/src/**/*.{ts,vue}' --fix"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "fast-check": "^4.5.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.55.0",
+    "vitest": "^3.2.4"
+  }
+}

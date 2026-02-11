@@ -1,0 +1,44 @@
+{
+  "common": {
+    "appName": "剧本杀AI生成工具",
+    "loading": "加载中...",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "search": "搜索",
+    "language": "语言"
+  },
+  "nav": {
+    "home": "首页",
+    "scripts": "剧本库",
+    "leaderboard": "排行榜",
+    "profile": "个人中心",
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出登录"
+  },
+  "auth": {
+    "loginTitle": "登录",
+    "registerTitle": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "nickname": "昵称",
+    "loginButton": "登录",
+    "registerButton": "注册",
+    "noAccount": "没有账号？去注册",
+    "hasAccount": "已有账号？去登录"
+  },
+  "home": {
+    "welcome": "欢迎来到剧本杀AI生成工具",
+    "description": "使用AI生成高质量剧本杀内容，在线组局游玩",
+    "createScript": "创建剧本",
+    "browseScripts": "浏览剧本库",
+    "hotScripts": "热门剧本",
+    "latestScripts": "最新剧本"
+  }
+}
