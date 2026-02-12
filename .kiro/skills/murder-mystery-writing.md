@@ -1,3 +1,8 @@
+---
+inclusion: fileMatch
+fileMatchPattern: "**/*murder*,**/*script*,**/*mystery*,**/*gameplay*,**/*generation*,**/*knowledge*,**/*designer*,**/*skill*,**/*clue*,**/*dm*,**/*handbook*,.kiro/specs/murder-mystery-ai-generator/**"
+---
+
 # 剧本杀创作知识库 (Murder Mystery Script Writing Skill)
 
 当涉及剧本杀内容生成、剧本结构设计、角色创建、线索设计等任务时，请参考本 skill。
