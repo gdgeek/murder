@@ -218,6 +218,21 @@ services/{service-name}/
 └── README.md
 ```
 
+## 已实现的子项目
+
+| 服务 | 仓库 | 状态 | 说明 |
+|------|------|------|------|
+| creation-service | [murder-mystery-generator](https://github.com/gdgeek/murder-mystery-generator) | ✅ 已完成 MVP | 剧本生成引擎 + 分阶段创作 + 多模型路由 + 临时AI配置 + 会话韧性。详见 [实现状态总览](../murder-mystery-ai-generator/implementation-status.md) |
+| auth-service | — | 🔲 未开始 | |
+| gameplay-service | — | 🔲 未开始 | |
+| knowledge-service | — | 🔲 未开始 | |
+| ai-toolchain-service | — | 🔲 未开始 | |
+| progression-service | — | 🔲 未开始 | |
+| feedback-service | — | 🔲 未开始 | |
+| web-client | — | 🔲 未开始 | |
+
+> 注：creation-service 当前以独立模式运行（非微服务模式），共享包已发布为 `@gdgeek/murder-mystery-shared`。
+
 ## 如何新建子项目
 
 1. 在 `services/` 下创建目录（或创建独立 Git 仓库后 submodule 引入）
