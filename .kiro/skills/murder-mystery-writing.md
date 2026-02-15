@@ -1,6 +1,6 @@
 ---
 inclusion: fileMatch
-fileMatchPattern: "**/*murder*,**/*script*,**/*mystery*,**/*gameplay*,**/*generation*,**/*knowledge*,**/*designer*,**/*skill*,**/*clue*,**/*dm*,**/*handbook*,.kiro/specs/murder-mystery-ai-generator/**"
+fileMatchPattern: "**/*murder*,**/*script*,**/*mystery*,**/*generation*,**/*clue*,**/*dm*,**/*handbook*,**/*material*,**/*game-room*,.kiro/specs/murder-mystery-system/**"
 ---
 
 # 剧本杀创作知识库 (Murder Mystery Script Writing Skill)

@@ -14,7 +14,7 @@
 
 - **语言**：全栈 TypeScript
 - **后端**：Node.js + Express
-- **前端**：Vue 3
+- **前端**：内嵌 HTML UI（Bootstrap 5 CDN + 原生 JS），不使用前端框架
 - **数据库**：MySQL 8.0 + Redis
 - **实时通信**：WebSocket（Socket.IO）
 - **容器化**：Docker + Docker Compose
@@ -234,7 +234,7 @@
 
 #### 验收标准
 
-1. THE System SHALL 提供 docker-compose.yml 文件，包含以下服务：物料生成系统后端、游戏玩家系统后端、Vue 3 前端、MySQL、Redis
+1. THE System SHALL 提供 docker-compose.yml 文件，包含以下服务：剧本生成系统、物料生成系统、游戏玩家系统、MySQL、Redis
 2. WHEN 执行 docker-compose up 命令时，THE System SHALL 启动所有服务并使系统可访问
 3. THE System SHALL 为物料生成系统和游戏玩家系统分别提供 Dockerfile，支持多阶段构建
 4. THE System SHALL 通过环境变量配置 AI 服务的 API 密钥和端点地址，不硬编码在代码中

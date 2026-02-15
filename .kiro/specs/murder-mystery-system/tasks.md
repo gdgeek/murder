@@ -275,7 +275,7 @@
 
 - [ ] 13. Docker Compose 集成
   - [ ] 13.1 创建 docker-compose.yml
-    - 配置 generator、material-service、game-service、mysql、redis 五个服务
+    - 配置 generator、murder-mystery-material、murder-mystery-game、mysql、redis 五个服务
     - 创建 init-databases.sql（初始化 material_db 和 game_db）
     - 配置环境变量（AI 服务密钥通过 .env 文件注入）
     - 配置 volumes（mysql-data、material-storage）
