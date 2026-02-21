@@ -239,12 +239,13 @@ interface PlayerPrologueContent {
   backgroundStory: string;
   relationships: CharacterRelationship[];
   initialKnowledge: string[];    // 初始已知信息
+  immersiveNarrative: string;    // 序幕第二人称沉浸式叙事（"你"视角，200+字）
 }
 
 interface PlayerActContent {
   actIndex: number;
   characterId: string;
-  personalNarrative: string;     // 角色视角故事片段
+  personalNarrative: string;     // 角色视角第二人称沉浸式叙事（"你"视角，300+字/幕）
   objectives: string[];          // 本幕行动目标
   clueHints: string[];           // 线索提示
   discussionSuggestions: string[];
@@ -255,6 +256,7 @@ interface PlayerFinaleContent {
   characterId: string;
   closingStatementGuide: string; // 最终陈述指引
   votingSuggestion: string;      // 投票建议
+  immersiveNarrative: string;    // 终幕第二人称沉浸式叙事（"你"视角，200+字）
 }
 ```
 
@@ -316,7 +318,6 @@ interface CharacterProfile {
   mbtiType: string;
   personality: string;     // 通用性格描述（不涉及具体剧情）
   appearance: string;      // 通用外貌描述（不涉及具体剧情）
-  specialTraits?: string[]; // 通用能力/特质（不涉及具体剧情）
 }
 
 // ─── 剧本角色绑定（剧本关联表） ───
@@ -325,6 +326,7 @@ interface ScriptCharacterBinding {
   characterId: string;
   characterName: string;
   characterType: CharacterType;
+  abilities?: string[];          // 角色在此剧本中的能力/特质
   backgroundStory: string;
   primaryMotivation: string;
   secrets: string[];
@@ -345,6 +347,15 @@ interface FullCharacterProfile extends CharacterProfile, ScriptCharacterBinding 
 2. **故事生成阶段**：用户确认角色后，将角色设定注入故事生成提示词，LLM 基于已确定的角色生成完整剧本（DMHandbook、PlayerHandbooks、Materials、BranchStructure、PlayableStructure）
 
 角色确认时自动持久化：通用属性写入 `characters` 表，剧本绑定数据写入 `script_character_sets` 表。角色 ID 在确认时替换为 UUID，确保跨剧本唯一性。
+
+**沉浸式叙事丰富化（Narrative Enrichment）**：
+
+主剧本 JSON 生成时，叙事字段（`immersiveNarrative`、`personalNarrative`）仅保留 1-2 句摘要或留空，避免 JSON 过大导致 LLM 输出截断。生成完成后，通过 `enrichNarrativeContent` 方法逐角色调用 LLM，为每个玩家角色独立生成：
+- 序幕沉浸式叙事（`prologueContent.immersiveNarrative`，200+ 字）
+- 每幕沉浸式叙事（`actContents[i].personalNarrative`，300+ 字/幕）
+- 终幕沉浸式叙事（`finaleContent.immersiveNarrative`，200+ 字）
+
+叙事规范：全程第二人称"你"视角，根据角色 MBTI 调整风格（内向型多内心独白，外向型多互动场景），凶手/嫌疑人视角特殊处理，误导信息以角色确信口吻呈现。叙事丰富化为非致命操作，单个角色失败不影响其他角色。
 
 ### 2. 物料生成系统
 
@@ -825,7 +836,6 @@ CREATE TABLE characters (
   mbti_type VARCHAR(10) NOT NULL,
   personality TEXT NOT NULL,
   appearance TEXT NOT NULL,
-  special_traits JSON,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
@@ -837,6 +847,7 @@ CREATE TABLE script_character_sets (
   character_id VARCHAR(36) NOT NULL,
   character_type ENUM('player', 'npc') NOT NULL DEFAULT 'player',
   narrative_role VARCHAR(50),
+  abilities JSON,
   background_story TEXT,
   primary_motivation TEXT,
   secondary_motivations JSON,
