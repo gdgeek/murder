@@ -33,6 +33,10 @@
 - Vitest + fast-check（测试）
 - 共享类型包：`@gdgeek/murder-mystery-shared`
 
+## Script_JSON 样例
+
+`script-json-example.json` 是一份由剧本生成系统实际生成的完整 Script_JSON 样例（4人本格剧本，2幕），包含旧结构（dmHandbook/playerHandbooks）和新的可游玩幕结构（playableStructure）。其他系统可参照此文件理解数据格式。
+
 ## 知识库结构
 
 ```

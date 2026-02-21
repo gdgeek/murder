@@ -1,0 +1,1025 @@
+{
+    "id": "4ba54488-a973-4516-9cbe-b2c77a0f09bb",
+    "tags": [],
+    "title": "\u67ab\u9732\u522b\u5885\u7684\u6740\u610f",
+    "config": {
+        "id": "7d38547c-8b32-451c-8d11-5873120cc238",
+        "era": "\u73b0\u4ee3",
+        "style": "detective",
+        "theme": "\u8c0b\u6740\u60ac\u7591",
+        "ageGroup": "adult",
+        "gameType": "honkaku",
+        "language": "zh",
+        "location": "\u522b\u5885",
+        "playerCount": 4,
+        "durationHours": 2,
+        "deductionRatio": 50,
+        "roundStructure": {
+            "rounds": [
+                {
+                    "readingMinutes": 10,
+                    "discussionMinutes": 15,
+                    "investigationMinutes": 15
+                },
+                {
+                    "readingMinutes": 10,
+                    "discussionMinutes": 15,
+                    "investigationMinutes": 15
+                }
+            ],
+            "totalRounds": 2,
+            "revealMinutes": 10,
+            "summaryMinutes": 20,
+            "finalVoteMinutes": 10
+        },
+        "restorationRatio": 50
+    },
+    "status": "ready",
+    "aiModel": "doubao-seed-2-0-mini-260215",
+    "version": "v1.0",
+    "configId": "7d38547c-8b32-451c-8d11-5873120cc238",
+    "createdAt": "2026-02-21T04:33:56.717Z",
+    "materials": [
+        {
+            "id": "mat001",
+            "type": "clue_card",
+            "clueId": "clue001",
+            "content": "\u4e66\u623f\u73b0\u573a\uff1a\u6797\u67ab\u8db4\u5728\u4e66\u684c\u524d\uff0c\u80f8\u53e3\u63d2\u7740\u4e66\u623f\u88c1\u7eb8\u5200\uff0c\u8840\u8ff9\u96c6\u4e2d\u5728\u4e66\u684c\u533a\u57df\uff0c\u7a97\u6237\u4ece\u5185\u90e8\u63d2\u9500\u9501\u6b7b\uff0c\u4e66\u684c\u62bd\u5c49\u63d2\u7740\u4e66\u623f\u94a5\u5319",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "none"
+        },
+        {
+            "id": "mat002",
+            "type": "clue_card",
+            "clueId": "clue002",
+            "content": "\u4e66\u623f\u7a97\u6237\u63d2\u9500\u4e0a\u6709\u7ec6\u5fae\u9c7c\u7ebf\u7f20\u7ed5\u75d5\u8ff9",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat003",
+            "type": "clue_card",
+            "clueId": "clue003",
+            "content": "\u4e66\u684c\u62bd\u5c49\u94a5\u5319\u5b54\u6709\u7ec6\u5fae\u9c7c\u7ebf\u5212\u75d5",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat004",
+            "type": "clue_card",
+            "clueId": "clue004",
+            "content": "\u5ba2\u5385\u5427\u53f0\u6709\u4e00\u676f\u559d\u5269\u7684\u5a01\u58eb\u5fcc\uff0c\u676f\u4e0a\u6709\u9648\u9ed8\u7684\u6307\u7eb9",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u5ba2\u5385"
+            },
+            "associatedCharacterId": "char01"
+        },
+        {
+            "id": "mat005",
+            "type": "clue_card",
+            "clueId": "clue005",
+            "content": "\u82b1\u56ed\u6709\u4e00\u4e32\u82cf\u665a\u7684\u811a\u5370\uff0c\u5ef6\u4f38\u81f3\u522b\u5885\u540e\u95e8",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u82b1\u56ed"
+            },
+            "associatedCharacterId": "char02"
+        },
+        {
+            "id": "mat006",
+            "type": "clue_card",
+            "clueId": "clue006",
+            "content": "\u9910\u5385\u9910\u684c\u6709\u6797\u67ab\u7684\u9057\u5631\u8349\u7a3f\uff0c\u63d0\u53ca\u5c06\u522b\u5885\u7559\u7ed9\u5f1f\u5f1f\u6797\u9633",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u9910\u5385"
+            },
+            "associatedCharacterId": "none"
+        },
+        {
+            "id": "mat007",
+            "type": "clue_card",
+            "clueId": "clue007",
+            "content": "\u5218\u742a\u7684\u5ba2\u623f\u5185\u6709\u4e00\u74f6\u672a\u5f00\u5c01\u7684\u5b89\u7720\u836f",
+            "metadata": {
+                "level": "\u5e72\u6270",
+                "location": "\u5218\u742a\u5ba2\u623f"
+            },
+            "associatedCharacterId": "char04"
+        },
+        {
+            "id": "mat008",
+            "type": "clue_card",
+            "clueId": "clue008",
+            "content": "\u8f66\u5e93\u5185\u6709\u4e00\u5377\u900f\u660e\u9c7c\u7ebf\uff0c\u5269\u4f59\u957f\u5ea6\u7ea65\u7c73",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u8f66\u5e93"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat009",
+            "type": "clue_card",
+            "clueId": "clue009",
+            "content": "\u82cf\u665a\u7684\u5305\u5185\u6709\u7236\u4eb22018\u5e74\u624b\u672f\u8d39\u8d26\u5355\uff0c\u7f34\u8d39\u4eba\u4e3a\u6797\u67ab",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u82cf\u665a\u5ba2\u623f"
+            },
+            "associatedCharacterId": "char02"
+        },
+        {
+            "id": "mat010",
+            "type": "clue_card",
+            "clueId": "clue010",
+            "content": "\u5f20\u6d69\u7684\u897f\u88c5\u8896\u53e3\u6709\u4e00\u6839\u900f\u660e\u9c7c\u7ebf\u6b8b\u7559",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u5f20\u6d69\u5ba2\u623f"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat011",
+            "type": "clue_card",
+            "clueId": "clue011",
+            "content": "\u9648\u9ed8\u7684\u7b14\u8bb0\u672c\u5185\u67092018\u5e74\u59b9\u59b9\u7684\u533b\u7597\u4e8b\u6545\u62a5\u544a\uff0c\u4e3b\u6cbb\u533b\u751f\u4e3a\u6797\u67ab",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u9648\u9ed8\u5ba2\u623f"
+            },
+            "associatedCharacterId": "char01"
+        },
+        {
+            "id": "mat012",
+            "type": "clue_card",
+            "clueId": "clue012",
+            "content": "\u5218\u742a\u7684\u624b\u673a\u5185\u6709\u6797\u67ab\u7684\u5a01\u80c1\u77ed\u4fe1\uff1a\u201c\u4f60\u5f53\u5e74\u7684\u7cbe\u795e\u75c5\u53f2\u8981\u662f\u88ab\u672a\u5a5a\u592b\u77e5\u9053\uff0c\u4f60\u5c31\u5b8c\u4e86\u201d",
+            "metadata": {
+                "level": "\u5173\u952e",
+                "location": "\u5218\u742a\u5ba2\u623f"
+            },
+            "associatedCharacterId": "char04"
+        },
+        {
+            "id": "mat013",
+            "type": "clue_card",
+            "clueId": "clue013",
+            "content": "\u6797\u67ab\u7684\u624b\u673a\u5185\u6709\u5f20\u6d69\u7684\u77ed\u4fe1\uff1a\u201c\u4f60\u8981\u662f\u6562\u66dd\u5149\u6211\u7684\u4e8b\uff0c\u6211\u5c31\u5bf9\u4f60\u4e0d\u5ba2\u6c14\u201d",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat014",
+            "type": "clue_card",
+            "clueId": "clue014",
+            "content": "\u6797\u67ab\u7684\u7535\u8111\u5185\u6709\u5f20\u6d69\u632a\u7528\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\u7684\u8bc1\u636e\u6587\u4ef6",
+            "metadata": {
+                "level": "\u8f85\u52a9",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "char03"
+        },
+        {
+            "id": "mat015",
+            "type": "clue_card",
+            "clueId": "clue015",
+            "content": "\u4e66\u623f\u88c1\u7eb8\u5200\u4e0a\u6709\u6a21\u7cca\u6307\u7eb9\uff0c\u5df2\u88ab\u64e6\u62ed\u5e72\u51c0",
+            "metadata": {
+                "level": "\u5e72\u6270",
+                "location": "\u4e66\u623f\u73b0\u573a"
+            },
+            "associatedCharacterId": "char03"
+        }
+    ],
+    "updatedAt": "2026-02-21T04:33:56.717Z",
+    "aiProvider": "doubao",
+    "dmHandbook": {
+        "endings": [
+            "\u771f\u76f8\u7ed3\u5c40\uff1a\u6210\u529f\u6307\u8ba4\u771f\u51f6\u5e76\u8fd8\u539f\u5168\u90e8\u7ec6\u8282",
+            "\u9519\u5224\u7ed3\u5c40\uff1a\u6307\u8ba4\u771f\u51f6\u9519\u8bef\uff0c\u771f\u51f6\u9003\u8131",
+            "\u5bc6\u5ba4\u8bef\u5224\u7ed3\u5c40\uff1a\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u4f46\u6307\u8ba4\u9519\u8bef\u5acc\u7591\u4eba"
+        ],
+        "overview": "\u8fd9\u662f\u4e00\u4e2a4\u4eba\u672c\u683c\u8c0b\u6740\u60ac\u7591\u5267\u672c\u6740\uff0c\u6e38\u620f\u65f6\u957f\u7ea62\u5c0f\u65f6\uff0c\u73a9\u5bb6\u5c06\u626e\u6f14\u53d7\u9080\u6765\u5230\u67ab\u9732\u522b\u5885\u7684\u56db\u4f4d\u65e7\u53cb\uff0c\u5728\u522b\u5885\u4e3b\u4eba\u6797\u67ab\u88ab\u6740\u540e\u5c55\u5f00\u63a8\u7406\uff0c\u8fd8\u539f\u6848\u4ef6\u771f\u76f8\u3002\u5267\u672c\u5305\u542b\u5bc6\u5ba4\u8be1\u8ba1\u4e0e\u4e0d\u5728\u573a\u8bc1\u660e\u63a8\u7406\uff0c\u8fd8\u539f\u4e0e\u63a8\u7406\u5404\u536050%\uff0c\u7ebf\u7d22\u5206\u4e3a\u4e09\u7ea7\uff0c\u9700\u901a\u8fc7\u5b8c\u6574\u903b\u8f91\u94fe\u9501\u5b9a\u771f\u51f6\u3002",
+        "timeline": [
+            "2024\u5e7410\u670812\u65e5 18:00 \u5168\u5458\u62b5\u8fbe\u67ab\u9732\u522b\u5885\uff0c\u6797\u67ab\u8fce\u63a5",
+            "19:00 \u665a\u9910\u5f00\u59cb\uff0c\u6797\u67ab\u79f0\u6b21\u65e5\u6709\u91cd\u8981\u4e8b\u5ba3\u5e03",
+            "21:00 \u665a\u9910\u7ed3\u675f\uff0c\u6797\u67ab\u72ec\u81ea\u524d\u5f80\u4e66\u623f",
+            "21:20 \u9648\u9ed8\u8def\u8fc7\u4e66\u623f\uff0c\u770b\u5230\u6797\u67ab\u5750\u5728\u4e66\u684c\u524d",
+            "21:30 \u82cf\u665a\u524d\u5f80\u82b1\u56ed\uff0c\u5f20\u6d69\u524d\u5f80\u8f66\u5e93\u53d6\u7ea2\u9152\uff0c\u5218\u742a\u8fd4\u56de\u5ba2\u623f",
+            "22:00 \u82cf\u665a\u8fd4\u56de\u522b\u5885\uff0c\u4e0e\u9648\u9ed8\u4ea4\u8c08\uff0c\u5f20\u6d69\u643a\u7ea2\u9152\u8fd4\u56de\uff0c\u4f17\u4eba\u5404\u81ea\u56de\u623f",
+            "22:30 \u5218\u742a\u524d\u5f80\u53a8\u623f\u5012\u6c34\uff0c\u8def\u8fc7\u4e66\u623f\u542c\u5230\u7ffb\u4e66\u58f0",
+            "00:10 \u5218\u742a\u5931\u7720\u8d70\u5230\u5ba2\u5385\uff0c\u4ec5\u9648\u9ed8\u5728\u770b\u7535\u5f71",
+            "00:15 \u82cf\u665a\u542c\u5230\u4e66\u623f\u5f02\u54cd\uff0c\u53eb\u9192\u5176\u4ed6\u4e09\u4eba",
+            "00:20 \u56db\u4eba\u96c6\u5408\u5728\u4e66\u623f\u95e8\u53e3\uff0c\u95e8\u53cd\u9501\u65e0\u6cd5\u6253\u5f00",
+            "00:25 \u4f17\u4eba\u649e\u5f00\u623f\u95e8\uff0c\u53d1\u73b0\u6797\u67ab\u6b7b\u4e8e\u5bc6\u5ba4\u4e66\u623f"
+        ],
+        "characters": [
+            {
+                "characterId": "char01",
+                "description": "32\u5c81\u79c1\u5bb6\u4fa6\u63a2\uff0c\u6c89\u7a33\u5e72\u7ec3\uff0c\u968f\u8eab\u5e26\u9ed1\u8272\u516c\u6587\u5305",
+                "characterName": "\u9648\u9ed8"
+            },
+            {
+                "characterId": "char02",
+                "description": "30\u5c81\u82b1\u827a\u5e08\uff0c\u6e29\u67d4\u4f18\u96c5\uff0c\u66fe\u662f\u6797\u67ab\u524d\u5973\u53cb",
+                "characterName": "\u82cf\u665a"
+            },
+            {
+                "characterId": "char03",
+                "description": "33\u5c81\u5f8b\u5e08\uff0c\u6797\u67ab\u53d1\u5c0f\uff0c\u897f\u88c5\u9769\u5c65\u795e\u8272\u7d27\u5f20",
+                "characterName": "\u5f20\u6d69"
+            },
+            {
+                "characterId": "char04",
+                "description": "29\u5c81\u62a4\u58eb\uff0c\u6797\u67ab\u5b66\u59b9\uff0c\u795e\u8272\u4e0d\u5b89",
+                "characterName": "\u5218\u742a"
+            }
+        ],
+        "roundGuides": [
+            "\u7b2c\u4e00\u5e55\uff1a\u521d\u6b65\u4e86\u89e3\u6848\u4ef6\uff0c\u641c\u8bc1\u516c\u5171\u533a\u57df\u4e0e\u73b0\u573a\uff0c\u8ba8\u8bba\u521d\u6b65\u5acc\u7591\u4eba",
+            "\u7b2c\u4e8c\u5e55\uff1a\u6df1\u5165\u641c\u8bc1\u79c1\u4eba\u533a\u57df\uff0c\u7834\u89e3\u5bc6\u5ba4\u8be1\u8ba1\uff0c\u9501\u5b9a\u771f\u51f6",
+            "\u6700\u7ec8\u6295\u7968\uff1a\u6307\u8ba4\u771f\u51f6\u5e76\u8fd8\u539f\u5b8c\u6574\u6848\u4ef6"
+        ],
+        "truthReveal": "\u771f\u51f6\u4e3a\u5f20\u6d69\uff08char03\uff09\u3002\u4f5c\u6848\u52a8\u673a\uff1a\u5f20\u6d69\u632a\u7528\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\uff0c\u88ab\u6797\u67ab\u638c\u63e1\u8bc1\u636e\u5e76\u5a01\u80c1\u66dd\u5149\uff0c\u4e3a\u706d\u53e3\u884c\u51f6\u3002\u4f5c\u6848\u65f6\u95f4\uff1a21:30-22:00\uff0c\u5f20\u6d69\u4ee5\u53d6\u7ea2\u9152\u4e3a\u501f\u53e3\u6f5c\u5165\u4e66\u623f\u6740\u4eba\u3002\u5bc6\u5ba4\u624b\u6cd5\uff1a\u7528\u9c7c\u7ebf\u7a7f\u8fc7\u4e66\u684c\u94a5\u5319\u5b54\uff0c\u7ed5\u8fc7\u7a97\u6237\u63d2\u9500\uff0c\u4ece\u7a97\u5916\u9501\u7a97\u540e\u62c9\u9c7c\u7ebf\u5c06\u94a5\u5319\u9001\u5165\u62bd\u5c49\uff0c\u526a\u65ad\u9c7c\u7ebf\u5b8c\u6210\u5bc6\u5ba4\u3002\u5173\u952e\u8bc1\u636e\uff1a\u4e66\u623f\u63d2\u9500\u9c7c\u7ebf\u75d5\u8ff9\u3001\u5f20\u6d69\u8896\u53e3\u9c7c\u7ebf\u6b8b\u7559\u3001\u8f66\u5e93\u9c7c\u7ebf\u5377\u8f74\u3001\u6797\u67ab\u624b\u673a\u5185\u7684\u632a\u7528\u8bc1\u636e\u77ed\u4fe1\u3002",
+        "judgingRules": {
+            "winConditions": "\u73a9\u5bb6\u6210\u529f\u6307\u8ba4\u771f\u51f6\u5e76\u8fd8\u539f\u5b8c\u6574\u6848\u4ef6\u7ec6\u8282\u5373\u4e3a\u80dc\u5229",
+            "scoringCriteria": "\u6b63\u786e\u6307\u8ba4\u771f\u51f6\u5f975\u5206\uff0c\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u5f973\u5206\uff0c\u8fd8\u539f\u5168\u90e8\u52a8\u673a\u5f972\u5206\uff0c\u603b\u520610\u5206"
+        },
+        "clueDistribution": [
+            "\u7b2c\u4e00\u5e55\uff08act1\uff09\u5206\u53d1\u7ebf\u7d22\uff1aclue001-clue007\uff0c\u542b3\u6761\u5173\u952e\u7ebf\u7d22",
+            "\u7b2c\u4e8c\u5e55\uff08act2\uff09\u5206\u53d1\u7ebf\u7d22\uff1aclue008-clue015\uff0c\u542b2\u6761\u5173\u952e\u7ebf\u7d22",
+            "\u603b\u7ebf\u7d2215\u6761\uff0c\u5173\u952e\u7ebf\u7d225\u6761\uff0c\u5360\u6bd433%\u7b26\u5408\u8981\u6c42"
+        ],
+        "branchDecisionPoints": [
+            "\u7b2c\u4e00\u5e55\u6295\u7968\uff1a\u6307\u8ba4\u521d\u6b65\u5acc\u7591\u4eba",
+            "\u7b2c\u4e8c\u5e55\u6295\u7968\uff1a\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5",
+            "\u6700\u7ec8\u6295\u7968\uff1a\u6307\u8ba4\u771f\u51f6"
+        ]
+    },
+    "branchStructure": {
+        "edges": [
+            {
+                "to": "act1_vote",
+                "from": "start",
+                "condition": "\u5b8c\u6210\u5e8f\u5e55\u89d2\u8272\u4ecb\u7ecd"
+            },
+            {
+                "to": "act2_vote",
+                "from": "act1_vote",
+                "condition": "\u5b8c\u6210\u7b2c\u4e00\u5e55\u641c\u8bc1\u4e0e\u8ba8\u8bba"
+            },
+            {
+                "to": "final_vote",
+                "from": "act2_vote",
+                "condition": "\u5b8c\u6210\u7b2c\u4e8c\u5e55\u641c\u8bc1\u4e0e\u8ba8\u8bba"
+            },
+            {
+                "to": "true_end",
+                "from": "final_vote",
+                "condition": "\u6b63\u786e\u6307\u8ba4\u771f\u51f6\u5e76\u7834\u89e3\u5bc6\u5ba4"
+            },
+            {
+                "to": "false_end",
+                "from": "final_vote",
+                "condition": "\u6307\u8ba4\u771f\u51f6\u9519\u8bef\u4e14\u672a\u7834\u89e3\u5bc6\u5ba4"
+            },
+            {
+                "to": "misjudge_end",
+                "from": "final_vote",
+                "condition": "\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u4f46\u6307\u8ba4\u9519\u8bef"
+            }
+        ],
+        "nodes": [
+            "start",
+            "act1_vote",
+            "act2_vote",
+            "final_vote",
+            "true_end",
+            "false_end",
+            "misjudge_end"
+        ],
+        "endings": [
+            "true_end",
+            "false_end",
+            "misjudge_end"
+        ]
+    },
+    "playerHandbooks": [
+        {
+            "secrets": [
+                "\u4f60\u66fe\u8ba1\u5212\u4e3a\u59b9\u59b9\u590d\u4ec7\uff0c\u8d76\u5230\u4e66\u623f\u65f6\u6797\u67ab\u5df2\u6b7b"
+            ],
+            "knownClues": [
+                "\u4fa6\u63a2\u8bc1",
+                "\u7b14\u8bb0\u672c\u5185\u7684\u59b9\u59b9\u533b\u7597\u4e8b\u6545\u8bb0\u5f55"
+            ],
+            "characterId": "char01",
+            "primaryGoal": "\u627e\u51fa\u6740\u5bb3\u6797\u67ab\u7684\u771f\u51f6\uff0c\u9690\u85cf\u81ea\u5df1\u7684\u590d\u4ec7\u52a8\u673a",
+            "roundActions": [
+                "\u7b2c\u4e00\u5e55\uff1a\u641c\u8bc1\u4e66\u623f\u3001\u5ba2\u5385",
+                "\u7b2c\u4e8c\u5e55\uff1a\u641c\u8bc1\u81ea\u5df1\u5ba2\u623f\u3001\u82b1\u56ed"
+            ],
+            "characterName": "\u9648\u9ed8",
+            "relationships": [
+                "\u4e0e\u6797\u67ab\u662f\u5927\u5b66\u540c\u5b66\u6709\u65e7\u6028",
+                "\u4e0e\u82cf\u665a\u662f\u5927\u5b66\u540c\u5b66",
+                "\u4e0e\u5f20\u6d69\u662f\u53d1\u5c0f",
+                "\u4e0e\u5218\u742a\u662f\u5b66\u957f\u5b66\u59b9"
+            ],
+            "secondaryGoals": [
+                "\u67e5\u660e\u59b9\u59b9\u533b\u7597\u4e8b\u6545\u771f\u76f8",
+                "\u627e\u5230\u6797\u67ab\u632a\u7528\u516c\u6b3e\u7684\u8bc1\u636e"
+            ],
+            "backgroundStory": "\u4f60\u662f32\u5c81\u79c1\u5bb6\u4fa6\u63a2\uff0c\u53d7\u6797\u67ab\u5f1f\u5f1f\u6797\u9633\u59d4\u6258\u8c03\u67e5\u6797\u67ab\u632a\u7528\u516c\u6b3e\uff0c\u540c\u65f6\u4f60\u6000\u7591\u5f53\u5e74\u59b9\u59b9\u7684\u533b\u7597\u4e8b\u6545\u4e0e\u6797\u67ab\u6709\u5173\uff0c\u6b64\u6b21\u524d\u6765\u6697\u85cf\u590d\u4ec7\u610f\u56fe\u3002"
+        },
+        {
+            "secrets": [
+                "\u4f60\u77e5\u6653\u6797\u67ab\u632a\u7528\u7236\u4eb2\u624b\u672f\u8d39\uff0c\u4e00\u76f4\u6000\u6068\u5728\u5fc3"
+            ],
+            "knownClues": [
+                "\u82b1\u827a\u526a",
+                "\u7236\u4eb2\u7684\u624b\u672f\u8d39\u8d26\u5355"
+            ],
+            "characterId": "char02",
+            "primaryGoal": "\u627e\u51fa\u6740\u5bb3\u6797\u67ab\u7684\u771f\u51f6\uff0c\u9690\u85cf\u632a\u7528\u8bc1\u636e\u590d\u4ec7\u52a8\u673a",
+            "roundActions": [
+                "\u7b2c\u4e00\u5e55\uff1a\u641c\u8bc1\u82b1\u56ed\u3001\u9910\u5385",
+                "\u7b2c\u4e8c\u5e55\uff1a\u641c\u8bc1\u81ea\u5df1\u5ba2\u623f\u3001\u53a8\u623f"
+            ],
+            "characterName": "\u82cf\u665a",
+            "relationships": [
+                "\u4e0e\u6797\u67ab\u662f\u524d\u60c5\u4fa3\u6709\u65e7\u6028",
+                "\u4e0e\u9648\u9ed8\u662f\u5927\u5b66\u540c\u5b66",
+                "\u4e0e\u5f20\u6d69\u662f\u6797\u67ab\u53d1\u5c0f",
+                "\u4e0e\u5218\u742a\u662f\u670b\u53cb"
+            ],
+            "secondaryGoals": [
+                "\u627e\u5230\u6797\u67ab\u632a\u7528\u7236\u4eb2\u624b\u672f\u8d39\u7684\u8bc1\u636e",
+                "\u7d22\u8981\u8d54\u507f"
+            ],
+            "backgroundStory": "\u4f60\u662f30\u5c81\u82b1\u827a\u5e08\uff0c\u66fe\u662f\u6797\u67ab\u524d\u5973\u53cb\uff0c\u5f53\u5e74\u56e0\u8bef\u4f1a\u5206\u624b\u3002\u4f60\u7236\u4eb2\u7684\u624b\u672f\u8d39\u88ab\u6797\u67ab\u632a\u7528\u5bfc\u81f4\u53bb\u4e16\uff0c\u6b64\u6b21\u524d\u6765\u65e2\u662f\u60f3\u590d\u5408\u4e5f\u662f\u4e3a\u4e86\u590d\u4ec7\u3002"
+        },
+        {
+            "secrets": [
+                "\u4f60\u632a\u7528\u4e86\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\uff0c\u88ab\u6797\u67ab\u6293\u4f4f\u628a\u67c4"
+            ],
+            "knownClues": [
+                "\u5f8b\u5e08\u8bc1",
+                "\u5f8b\u6240\u632a\u7528\u8bc1\u636e\u6587\u4ef6"
+            ],
+            "characterId": "char03",
+            "primaryGoal": "\u9690\u85cf\u632a\u7528\u8bc1\u636e\uff0c\u4e0d\u88ab\u6307\u8ba4\u4e3a\u51f6\u624b",
+            "roundActions": [
+                "\u7b2c\u4e00\u5e55\uff1a\u641c\u8bc1\u8f66\u5e93\u3001\u4e66\u623f\u95e8\u53e3",
+                "\u7b2c\u4e8c\u5e55\uff1a\u641c\u8bc1\u81ea\u5df1\u5ba2\u623f\u3001\u5ba2\u5385"
+            ],
+            "characterName": "\u5f20\u6d69",
+            "relationships": [
+                "\u4e0e\u6797\u67ab\u662f\u53d1\u5c0f\u6709\u5229\u76ca\u51b2\u7a81",
+                "\u4e0e\u9648\u9ed8\u662f\u5927\u5b66\u540c\u5b66",
+                "\u4e0e\u82cf\u665a\u662f\u6797\u67ab\u524d\u53cb",
+                "\u4e0e\u5218\u742a\u662f\u6797\u67ab\u5b66\u59b9"
+            ],
+            "secondaryGoals": [
+                "\u9500\u6bc1\u6797\u67ab\u638c\u63e1\u7684\u8bc1\u636e",
+                "\u6446\u8131\u5a01\u80c1"
+            ],
+            "backgroundStory": "\u4f60\u662f33\u5c81\u5f8b\u5e08\uff0c\u6797\u67ab\u53d1\u5c0f\uff0c\u632a\u7528\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\u88ab\u6797\u67ab\u638c\u63e1\u8bc1\u636e\uff0c\u4ed6\u5a01\u80c1\u4eca\u665a\u66dd\u5149\uff0c\u4f60\u56e0\u6b64\u8d77\u4e86\u6740\u5fc3\u3002"
+        },
+        {
+            "secrets": [
+                "\u4f60\u77e5\u6653\u6797\u67ab\u6cc4\u9732\u4f60\u7684\u9690\u79c1\uff0c\u4e00\u76f4\u6000\u6068\u5728\u5fc3"
+            ],
+            "knownClues": [
+                "\u62a4\u58eb\u5e3d",
+                "\u624b\u673a\u5185\u7684\u6797\u67ab\u5a01\u80c1\u77ed\u4fe1"
+            ],
+            "characterId": "char04",
+            "primaryGoal": "\u627e\u51fa\u6740\u5bb3\u6797\u67ab\u7684\u771f\u51f6\uff0c\u9690\u85cf\u9690\u79c1\u6cc4\u9732\u590d\u4ec7\u52a8\u673a",
+            "roundActions": [
+                "\u7b2c\u4e00\u5e55\uff1a\u641c\u8bc1\u5ba2\u623f\u3001\u53a8\u623f",
+                "\u7b2c\u4e8c\u5e55\uff1a\u641c\u8bc1\u81ea\u5df1\u5ba2\u623f\u3001\u4e66\u623f"
+            ],
+            "characterName": "\u5218\u742a",
+            "relationships": [
+                "\u4e0e\u6797\u67ab\u662f\u5b66\u957f\u5b66\u59b9\u6709\u65e7\u6028",
+                "\u4e0e\u9648\u9ed8\u662f\u5b66\u957f\u5b66\u59b9",
+                "\u4e0e\u82cf\u665a\u662f\u670b\u53cb",
+                "\u4e0e\u5f20\u6d69\u662f\u6797\u67ab\u53d1\u5c0f"
+            ],
+            "secondaryGoals": [
+                "\u627e\u5230\u6797\u67ab\u6cc4\u9732\u9690\u79c1\u7684\u8bc1\u636e",
+                "\u7d22\u8981\u8d54\u507f"
+            ],
+            "backgroundStory": "\u4f60\u662f29\u5c81\u62a4\u58eb\uff0c\u6797\u67ab\u5b66\u59b9\uff0c\u6797\u67ab\u6cc4\u9732\u4f60\u66fe\u7cbe\u795e\u4e0d\u7a33\u7684\u9690\u79c1\uff0c\u5bfc\u81f4\u4f60\u4e22\u5de5\u4f5c\u3001\u88ab\u9000\u5a5a\uff0c\u6b64\u6b21\u524d\u6765\u6697\u85cf\u62a5\u590d\u610f\u56fe\u3002"
+        }
+    ],
+    "playableStructure": {
+        "acts": [
+            {
+                "vote": {
+                    "options": [
+                        {
+                            "id": "opt01",
+                            "text": "\u9648\u9ed8",
+                            "impact": "\u6307\u5411\u590d\u4ec7\u52a8\u673a"
+                        },
+                        {
+                            "id": "opt02",
+                            "text": "\u82cf\u665a",
+                            "impact": "\u6307\u5411\u60c5\u611f\u7ea0\u7eb7\u52a8\u673a"
+                        },
+                        {
+                            "id": "opt03",
+                            "text": "\u5f20\u6d69",
+                            "impact": "\u6307\u5411\u5229\u76ca\u51b2\u7a81\u52a8\u673a"
+                        },
+                        {
+                            "id": "opt04",
+                            "text": "\u5218\u742a",
+                            "impact": "\u6307\u5411\u9690\u79c1\u6cc4\u9732\u52a8\u673a"
+                        }
+                    ],
+                    "question": "\u4f60\u8ba4\u4e3a\u6740\u5bb3\u6797\u67ab\u7684\u521d\u6b65\u5acc\u7591\u4eba\u662f\u8c01\uff1f"
+                },
+                "title": "\u7b2c\u4e00\u5e55\uff1a\u5bc6\u5ba4\u521d\u73b0",
+                "clueIds": [
+                    "clue001",
+                    "clue002",
+                    "clue003",
+                    "clue004",
+                    "clue005",
+                    "clue006",
+                    "clue007"
+                ],
+                "actIndex": 1,
+                "narrative": "\u51cc\u666800:15\uff0c\u82cf\u665a\u542c\u5230\u4e66\u623f\u4f20\u6765\u5f02\u54cd\uff0c\u53eb\u9192\u5176\u4ed6\u4e09\u4eba\u3002\u4f17\u4eba\u53d1\u73b0\u4e66\u623f\u53cd\u9501\uff0c00:25\u649e\u5f00\u623f\u95e8\u540e\u53d1\u73b0\u6797\u67ab\u6b7b\u4e8e\u5bc6\u5ba4\u4e66\u623f\uff0c\u9700\u901a\u8fc7\u521d\u6b65\u641c\u8bc1\u9501\u5b9a\u521d\u6b65\u5acc\u7591\u4eba\u3002",
+                "discussion": {
+                    "topics": [
+                        "\u6797\u67ab\u6b7b\u4ea1\u65f6\u95f4",
+                        "\u5acc\u7591\u4eba\u4e0d\u5728\u573a\u8bc1\u660e",
+                        "\u5bc6\u5ba4\u7ebf\u7d22"
+                    ],
+                    "guidingQuestions": [
+                        "\u8c01\u6709\u65f6\u95f4\u6f5c\u5165\u4e66\u623f\uff1f",
+                        "\u73b0\u573a\u9c7c\u7ebf\u75d5\u8ff9\u4ee3\u8868\u4ec0\u4e48\uff1f",
+                        "\u54ea\u4e2a\u5acc\u7591\u4eba\u52a8\u673a\u6700\u660e\u663e\uff1f"
+                    ],
+                    "suggestedMinutes": 15
+                },
+                "objectives": [
+                    "\u641c\u8bc1\u4e66\u623f\u3001\u5ba2\u5385\u3001\u9910\u5385\u3001\u82b1\u56ed\u3001\u6240\u6709\u5ba2\u623f",
+                    "\u5206\u6790\u5acc\u7591\u4eba\u4e0d\u5728\u573a\u8bc1\u660e\u4e0e\u52a8\u673a",
+                    "\u6295\u7968\u6307\u8ba4\u521d\u6b65\u5acc\u7591\u4eba"
+                ]
+            },
+            {
+                "vote": {
+                    "options": [
+                        {
+                            "id": "opt10",
+                            "text": "\u51f6\u624b\u4ece\u7a97\u6237\u9003\u51fa\uff0c\u7528\u9c7c\u7ebf\u5c06\u94a5\u5319\u62c9\u56de\u62bd\u5c49",
+                            "impact": "\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4"
+                        },
+                        {
+                            "id": "opt11",
+                            "text": "\u51f6\u624b\u7528\u51b0\u5757\u5361\u4f4f\u95e8\u9501\uff0c\u878d\u5316\u540e\u9501\u95e8",
+                            "impact": "\u9519\u8bef"
+                        },
+                        {
+                            "id": "opt12",
+                            "text": "\u51f6\u624b\u7528\u5907\u7528\u94a5\u5319\u9501\u95e8\u540e\u653e\u56de\u4e66\u623f",
+                            "impact": "\u9519\u8bef"
+                        },
+                        {
+                            "id": "opt13",
+                            "text": "\u51f6\u624b\u4ece\u901a\u98ce\u7ba1\u9053\u9003\u51fa",
+                            "impact": "\u9519\u8bef"
+                        }
+                    ],
+                    "question": "\u4f60\u8ba4\u4e3a\u5bc6\u5ba4\u7684\u6784\u9020\u624b\u6cd5\u662f\uff1f"
+                },
+                "title": "\u7b2c\u4e8c\u5e55\uff1a\u771f\u76f8\u6e10\u660e",
+                "clueIds": [
+                    "clue008",
+                    "clue009",
+                    "clue010",
+                    "clue011",
+                    "clue012",
+                    "clue013",
+                    "clue014",
+                    "clue015"
+                ],
+                "actIndex": 2,
+                "narrative": "\u7b2c\u4e00\u5e55\u8ba8\u8bba\u8ba9\u4f60\u610f\u8bc6\u5230\u5bc6\u5ba4\u4e0e\u9c7c\u7ebf\u6709\u5173\uff0c\u9700\u6df1\u5165\u641c\u8bc1\u79c1\u4eba\u533a\u57df\u4e0e\u9690\u85cf\u5730\u70b9\uff0c\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5\uff0c\u9501\u5b9a\u771f\u51f6\u3002",
+                "discussion": {
+                    "topics": [
+                        "\u5bc6\u5ba4\u6784\u9020\u624b\u6cd5",
+                        "\u5acc\u7591\u4eba\u6df1\u5c42\u52a8\u673a",
+                        "\u4e0d\u5728\u573a\u8bc1\u660e\u6f0f\u6d1e"
+                    ],
+                    "guidingQuestions": [
+                        "\u8c01\u6709\u673a\u4f1a\u83b7\u53d6\u9c7c\u7ebf\uff1f",
+                        "\u54ea\u4e2a\u5acc\u7591\u4eba\u4e0d\u5728\u573a\u8bc1\u660e\u6709\u6f0f\u6d1e\uff1f",
+                        "\u9c7c\u7ebf\u75d5\u8ff9\u4e0e\u54ea\u4e2a\u5acc\u7591\u4eba\u6709\u5173\uff1f"
+                    ],
+                    "suggestedMinutes": 20
+                },
+                "objectives": [
+                    "\u641c\u8bc1\u8f66\u5e93\u3001\u53a8\u623f\u3001\u6240\u6709\u5ba2\u623f",
+                    "\u5bfb\u627e\u9c7c\u7ebf\u76f8\u5173\u7269\u54c1",
+                    "\u67e5\u627e\u5acc\u7591\u4eba\u6df1\u5c42\u52a8\u673a\u8bc1\u636e",
+                    "\u7834\u89e3\u5bc6\u5ba4\u6784\u9020"
+                ]
+            }
+        ],
+        "finale": {
+            "endings": [
+                {
+                    "name": "\u771f\u76f8\u5927\u767d",
+                    "endingId": "true_end",
+                    "narrative": "\u73a9\u5bb6\u6210\u529f\u9501\u5b9a\u771f\u51f6\u5f20\u6d69\uff0c\u5f20\u6d69\u4f9b\u8ba4\u4e0d\u8bb3\u88ab\u8b66\u65b9\u5e26\u8d70\u3002\u6797\u67ab\u5f1f\u5f1f\u5c06\u522b\u5885\u6539\u9020\u6210\u516c\u76ca\u517b\u8001\u9662\uff0c\u67ab\u9732\u522b\u5885\u6062\u590d\u5e73\u9759\u3002",
+                    "triggerCondition": "\u6b63\u786e\u6307\u8ba4\u771f\u51f6\u5e76\u7834\u89e3\u5bc6\u5ba4",
+                    "playerEndingSummaries": [
+                        {
+                            "ending": "\u9648\u9ed8\u67e5\u660e\u59b9\u59b9\u533b\u7597\u4e8b\u6545\u771f\u76f8\uff0c\u4e3a\u59b9\u59b9\u62a5\u4ec7",
+                            "characterId": "char01"
+                        },
+                        {
+                            "ending": "\u82cf\u665a\u653e\u4e0b\u4ec7\u6068\uff0c\u5f00\u542f\u65b0\u751f\u6d3b",
+                            "characterId": "char02"
+                        },
+                        {
+                            "ending": "\u5f20\u6d69\u53d7\u5230\u6cd5\u5f8b\u5236\u88c1",
+                            "characterId": "char03"
+                        },
+                        {
+                            "ending": "\u5218\u742a\u8ba9\u6797\u67ab\u4e3a\u6cc4\u9732\u9690\u79c1\u4ed8\u51fa\u4ee3\u4ef7",
+                            "characterId": "char04"
+                        }
+                    ]
+                },
+                {
+                    "name": "\u60ac\u6848\u672a\u4e86",
+                    "endingId": "false_end",
+                    "narrative": "\u771f\u51f6\u5f20\u6d69\u9003\u8131\uff0c\u67ab\u9732\u522b\u5885\u6210\u4e3a\u8bc5\u5492\u4e4b\u5730\uff0c\u65e0\u4eba\u6562\u518d\u8e0f\u5165\u3002",
+                    "triggerCondition": "\u6307\u8ba4\u771f\u51f6\u9519\u8bef\u4e14\u672a\u7834\u89e3\u5bc6\u5ba4",
+                    "playerEndingSummaries": [
+                        {
+                            "ending": "\u9648\u9ed8\u672a\u80fd\u67e5\u660e\u59b9\u59b9\u771f\u76f8\uff0c\u62b1\u61be\u79bb\u5f00",
+                            "characterId": "char01"
+                        },
+                        {
+                            "ending": "\u82cf\u665a\u672a\u80fd\u4e3a\u7236\u62a5\u4ec7\uff0c\u6d3b\u5728\u4ec7\u6068\u4e2d",
+                            "characterId": "char02"
+                        },
+                        {
+                            "ending": "\u5f20\u6d69\u900d\u9065\u6cd5\u5916",
+                            "characterId": "char03"
+                        },
+                        {
+                            "ending": "\u5218\u742a\u672a\u80fd\u8ba9\u6797\u67ab\u4ed8\u51fa\u4ee3\u4ef7",
+                            "characterId": "char04"
+                        }
+                    ]
+                },
+                {
+                    "name": "\u9519\u5224\u597d\u4eba",
+                    "endingId": "misjudge_end",
+                    "narrative": "\u73a9\u5bb6\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u4f46\u6307\u8ba4\u65e0\u8f9c\u73a9\u5bb6\uff0c\u771f\u51f6\u9003\u8131\uff0c\u88ab\u51a4\u6789\u7684\u73a9\u5bb6\u80cc\u8d1f\u6740\u4eba\u72af\u7f6a\u540d\u3002",
+                    "triggerCondition": "\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u4f46\u6307\u8ba4\u9519\u8bef",
+                    "playerEndingSummaries": [
+                        {
+                            "ending": "\u9648\u9ed8\u88ab\u8bef\u8ba4\u51f6\u624b\uff0c\u63a5\u53d7\u8b66\u65b9\u8c03\u67e5",
+                            "characterId": "char01"
+                        },
+                        {
+                            "ending": "\u82cf\u665a\u88ab\u8bef\u8ba4\u51f6\u624b\uff0c\u63a5\u53d7\u8b66\u65b9\u8c03\u67e5",
+                            "characterId": "char02"
+                        },
+                        {
+                            "ending": "\u5f20\u6d69\u900d\u9065\u6cd5\u5916",
+                            "characterId": "char03"
+                        },
+                        {
+                            "ending": "\u5218\u742a\u88ab\u8bef\u8ba4\u51f6\u624b\uff0c\u63a5\u53d7\u8b66\u65b9\u8c03\u67e5",
+                            "characterId": "char04"
+                        }
+                    ]
+                }
+            ],
+            "finalVote": {
+                "options": [
+                    {
+                        "id": "opt21",
+                        "text": "\u9648\u9ed8",
+                        "impact": "\u6b63\u786e\u5219\u89e6\u53d1\u771f\u76f8\u7ed3\u5c40"
+                    },
+                    {
+                        "id": "opt22",
+                        "text": "\u82cf\u665a",
+                        "impact": "\u9519\u8bef"
+                    },
+                    {
+                        "id": "opt23",
+                        "text": "\u5f20\u6d69",
+                        "impact": "\u6b63\u786e\u5219\u89e6\u53d1\u771f\u76f8\u7ed3\u5c40"
+                    },
+                    {
+                        "id": "opt24",
+                        "text": "\u5218\u742a",
+                        "impact": "\u9519\u8bef"
+                    }
+                ],
+                "question": "\u4f60\u8ba4\u4e3a\u6740\u5bb3\u6797\u67ab\u7684\u771f\u51f6\u662f\u8c01\uff1f"
+            },
+            "truthReveal": "\u771f\u51f6\u4e3a\u5f20\u6d69\uff08char03\uff09\u3002\u4f5c\u6848\u52a8\u673a\uff1a\u5f20\u6d69\u632a\u7528\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\uff0c\u88ab\u6797\u67ab\u638c\u63e1\u8bc1\u636e\u5e76\u5a01\u80c1\u66dd\u5149\uff0c\u4e3a\u706d\u53e3\u884c\u51f6\u3002\u4f5c\u6848\u65f6\u95f4\uff1a21:30-22:00\uff0c\u5f20\u6d69\u4ee5\u53d6\u7ea2\u9152\u4e3a\u501f\u53e3\u6f5c\u5165\u4e66\u623f\u6740\u4eba\u3002\u5bc6\u5ba4\u624b\u6cd5\uff1a\u7528\u9c7c\u7ebf\u7a7f\u8fc7\u4e66\u684c\u94a5\u5319\u5b54\uff0c\u7ed5\u8fc7\u7a97\u6237\u63d2\u9500\uff0c\u4ece\u7a97\u5916\u9501\u7a97\u540e\u62c9\u9c7c\u7ebf\u5c06\u94a5\u5319\u9001\u5165\u62bd\u5c49\uff0c\u526a\u65ad\u9c7c\u7ebf\u5b8c\u6210\u5bc6\u5ba4\u3002\u5173\u952e\u8bc1\u636e\uff1a\u4e66\u623f\u63d2\u9500\u9c7c\u7ebf\u75d5\u8ff9\u3001\u5f20\u6d69\u8896\u53e3\u9c7c\u7ebf\u6b8b\u7559\u3001\u8f66\u5e93\u9c7c\u7ebf\u5377\u8f74\u3001\u6797\u67ab\u624b\u673a\u5185\u7684\u632a\u7528\u8bc1\u636e\u77ed\u4fe1\u3002"
+        },
+        "prologue": {
+            "worldSetting": "\u73b0\u4ee3\u5c01\u95ed\u72ec\u680b\u522b\u5885\uff0c\u65e0\u5916\u4eba\u95ef\u5165\u75d5\u8ff9\uff0c\u6240\u6709\u5acc\u7591\u4eba\u5747\u4e3a\u53d7\u9080\u65e7\u53cb",
+            "characterIntros": [
+                {
+                    "characterId": "char01",
+                    "characterName": "\u9648\u9ed8",
+                    "publicDescription": "\u6c89\u7a33\u5e72\u7ec3\u7684\u79c1\u5bb6\u4fa6\u63a2\uff0c\u968f\u8eab\u5e26\u9ed1\u8272\u516c\u6587\u5305"
+                },
+                {
+                    "characterId": "char02",
+                    "characterName": "\u82cf\u665a",
+                    "publicDescription": "\u6e29\u67d4\u4f18\u96c5\u7684\u82b1\u827a\u5e08\uff0c\u624b\u6301\u5e72\u82b1\u795e\u8272\u6194\u60b4"
+                },
+                {
+                    "characterId": "char03",
+                    "characterName": "\u5f20\u6d69",
+                    "publicDescription": "\u897f\u88c5\u9769\u5c65\u7684\u5f8b\u5e08\uff0c\u4e0d\u505c\u64e6\u62ed\u624b\u5fc3\u6c57\u6c34"
+                },
+                {
+                    "characterId": "char04",
+                    "characterName": "\u5218\u742a",
+                    "publicDescription": "\u7a7f\u62a4\u58eb\u670d\u7684\u5973\u751f\uff0c\u65f6\u4e0d\u65f6\u770b\u5411\u4e66\u623f\u65b9\u5411"
+                }
+            ],
+            "backgroundNarrative": "2024\u5e74\u79cb\uff0c\u4f60\u53d7\u9080\u6765\u5230\u5e02\u90ca\u67ab\u9732\u522b\u5885\uff0c\u522b\u5885\u4e3b\u4eba\u6797\u67ab\u662f\u4f60\u7684\u65e7\u53cb\uff0c\u665a\u9910\u5e2d\u95f4\u4ed6\u795e\u8272\u614c\u5f20\uff0c\u53ea\u8bf4\u660e\u5929\u6709\u91cd\u8981\u4e8b\u5ba3\u5e03\uff0c\u6c14\u6c1b\u5fae\u5999\u3002"
+        },
+        "dmHandbook": {
+            "actGuides": [
+                {
+                    "actIndex": 1,
+                    "keyEventHints": [
+                        "\u63d0\u9192\u73a9\u5bb6\u8bb0\u5f55\u6bcf\u4e2a\u5acc\u7591\u4eba\u7684\u4e0d\u5728\u573a\u8bc1\u660e",
+                        "\u5f15\u5bfc\u73a9\u5bb6\u6ce8\u610f\u73b0\u573a\u9c7c\u7ebf\u75d5\u8ff9"
+                    ],
+                    "readAloudText": "\u51cc\u666800:15\uff0c\u82cf\u665a\u542c\u5230\u4e66\u623f\u4f20\u6765\u5f02\u54cd\uff0c\u53eb\u9192\u5176\u4ed6\u4e09\u4eba\u3002\u4f17\u4eba\u53d1\u73b0\u4e66\u623f\u53cd\u9501\uff0c00:25\u649e\u5f00\u623f\u95e8\u540e\u53d1\u73b0\u6797\u67ab\u6b7b\u4e8e\u5bc6\u5ba4\u4e66\u623f\u3002",
+                    "dmPrivateNotes": "\u63d0\u9192\u51f6\u624b\u89d2\u8272\u9690\u85cf\u5173\u952e\u7ebf\u7d22\uff0c\u5982\u5f20\u6d69\u7684\u9c7c\u7ebf\u6b8b\u7559",
+                    "voteHostingNotes": "\u533f\u540d\u6295\u7968\u7edf\u8ba1\u7ed3\u679c\uff0c\u4e0d\u516c\u5e03\u6b63\u786e\u7b54\u6848",
+                    "discussionGuidance": "\u5f15\u5bfc\u73a9\u5bb6\u8ba8\u8bba\u4e0d\u5728\u573a\u8bc1\u660e\u4e0e\u521d\u6b65\u52a8\u673a\uff0c\u4e0d\u8981\u8fc7\u65e9\u66b4\u9732\u5173\u952e\u7ebf\u7d22",
+                    "clueDistributionInstructions": [
+                        {
+                            "clueId": "clue001",
+                            "condition": "\u7b2c\u4e00\u5e55\u641c\u8bc1\u5f00\u59cb",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue002",
+                            "condition": "\u7b2c\u4e00\u5e55\u641c\u8bc1\u5f00\u59cb",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue003",
+                            "condition": "\u7b2c\u4e00\u5e55\u641c\u8bc1\u5f00\u59cb",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue004",
+                            "condition": "\u641c\u8bc1\u5ba2\u5385",
+                            "targetCharacterId": "char01"
+                        },
+                        {
+                            "clueId": "clue005",
+                            "condition": "\u641c\u8bc1\u82b1\u56ed",
+                            "targetCharacterId": "char02"
+                        },
+                        {
+                            "clueId": "clue006",
+                            "condition": "\u641c\u8bc1\u9910\u5385",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue007",
+                            "condition": "\u641c\u8bc1\u5218\u742a\u5ba2\u623f",
+                            "targetCharacterId": "char04"
+                        }
+                    ]
+                },
+                {
+                    "actIndex": 2,
+                    "keyEventHints": [
+                        "\u63d0\u9192\u73a9\u5bb6\u641c\u8bc1\u8f66\u5e93\u4e0e\u5ba2\u623f",
+                        "\u5f15\u5bfc\u73a9\u5bb6\u5173\u6ce8\u5acc\u7591\u4eba\u7684\u6df1\u5c42\u52a8\u673a"
+                    ],
+                    "readAloudText": "\u7b2c\u4e00\u5e55\u7684\u8ba8\u8bba\u8ba9\u4f60\u610f\u8bc6\u5230\u5bc6\u5ba4\u4e0e\u9c7c\u7ebf\u6709\u5173\uff0c\u8bf7\u6df1\u5165\u641c\u8bc1\u79c1\u4eba\u533a\u57df\u4e0e\u9690\u85cf\u5730\u70b9\uff0c\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5\u3002",
+                    "dmPrivateNotes": "\u9002\u5f53\u7ed9\u672a\u627e\u5230\u5173\u952e\u7ebf\u7d22\u7684\u73a9\u5bb6\u63d0\u793a\uff0c\u907f\u514d\u6e38\u620f\u5361\u5173",
+                    "voteHostingNotes": "\u533f\u540d\u6295\u7968\u7edf\u8ba1\u5bc6\u5ba4\u624b\u6cd5\u7ed3\u679c\uff0c\u4e0d\u516c\u5e03\u6b63\u786e\u7b54\u6848",
+                    "discussionGuidance": "\u5f15\u5bfc\u73a9\u5bb6\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5\uff0c\u4e0d\u8981\u63d0\u524d\u900f\u9732\u771f\u51f6\u8eab\u4efd",
+                    "clueDistributionInstructions": [
+                        {
+                            "clueId": "clue008",
+                            "condition": "\u7b2c\u4e8c\u5e55\u641c\u8bc1\u5f00\u59cb",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue009",
+                            "condition": "\u641c\u8bc1\u82cf\u665a\u5ba2\u623f",
+                            "targetCharacterId": "char02"
+                        },
+                        {
+                            "clueId": "clue010",
+                            "condition": "\u641c\u8bc1\u5f20\u6d69\u5ba2\u623f",
+                            "targetCharacterId": "char03"
+                        },
+                        {
+                            "clueId": "clue011",
+                            "condition": "\u641c\u8bc1\u9648\u9ed8\u5ba2\u623f",
+                            "targetCharacterId": "char01"
+                        },
+                        {
+                            "clueId": "clue012",
+                            "condition": "\u641c\u8bc1\u5218\u742a\u5ba2\u623f",
+                            "targetCharacterId": "char04"
+                        },
+                        {
+                            "clueId": "clue013",
+                            "condition": "\u641c\u8bc1\u4e66\u623f",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue014",
+                            "condition": "\u641c\u8bc1\u4e66\u623f",
+                            "targetCharacterId": "all"
+                        },
+                        {
+                            "clueId": "clue015",
+                            "condition": "\u641c\u8bc1\u4e66\u623f",
+                            "targetCharacterId": "all"
+                        }
+                    ]
+                }
+            ],
+            "finaleGuide": {
+                "truthRevealScript": "\u73b0\u5728\u4e3a\u5927\u5bb6\u63ed\u793a\u6848\u4ef6\u771f\u76f8\uff1a\u771f\u51f6\u662f\u5f20\u6d69\uff0c\u4f5c\u6848\u52a8\u673a\u4e3a\u632a\u7528\u516c\u6b3e\u88ab\u6797\u67ab\u5a01\u80c1\uff0c\u624b\u6cd5\u4e3a\u7528\u9c7c\u7ebf\u5236\u9020\u5bc6\u5ba4\uff0c\u5173\u952e\u8bc1\u636e\u5305\u62ec...",
+                "endingJudgmentNotes": "\u6839\u636e\u6295\u7968\u7ed3\u679c\u89e6\u53d1\u5bf9\u5e94\u7ed3\u5c40\uff0c\u6b63\u786e\u6307\u8ba4\u771f\u51f6\u5219\u89e6\u53d1\u771f\u76f8\u7ed3\u5c40\uff0c\u9519\u8bef\u5219\u89e6\u53d1\u9519\u5224\u7ed3\u5c40\uff0c\u6b63\u786e\u7834\u89e3\u5bc6\u5ba4\u4f46\u6307\u8ba4\u9519\u8bef\u5219\u89e6\u53d1\u9519\u5224\u597d\u4eba\u7ed3\u5c40",
+                "finalVoteHostingFlow": "\u8bf7\u73a9\u5bb6\u533f\u540d\u6295\u7968\u6307\u8ba4\u771f\u51f6\uff0c\u7edf\u8ba1\u7ed3\u679c\u540e\u516c\u5e03\u771f\u76f8"
+            },
+            "prologueGuide": {
+                "openingScript": "\u5404\u4f4d\u73a9\u5bb6\u597d\uff0c\u6b22\u8fce\u6765\u5230\u300a\u67ab\u9732\u522b\u5885\u7684\u6740\u610f\u300b\u3002\u4eca\u5929\u7684\u6545\u4e8b\u53d1\u751f\u57282024\u5e74\u79cb\u7684\u5e02\u90ca\u67ab\u9732\u522b\u5885\uff0c\u4f60\u4eec\u90fd\u662f\u6797\u67ab\u7684\u65e7\u53cb\uff0c\u53d7\u9080\u524d\u6765\u805a\u4f1a\u3002\u665a\u9910\u5e2d\u95f4\u6797\u67ab\u795e\u8272\u614c\u5f20\uff0c\u53ea\u8bf4\u660e\u5929\u6709\u91cd\u8981\u4e8b\u5ba3\u5e03\uff0c\u8bf7\u9605\u8bfb\u81ea\u5df1\u7684\u89d2\u8272\u5267\u672c\u3002",
+                "rulesIntroduction": "\u5267\u672c\u5206\u4e3a\u4e24\u5e55\uff0c\u6bcf\u5e55\u6709\u641c\u8bc1\u4e0e\u8ba8\u8bba\u73af\u8282\uff0c\u6700\u7ec8\u6295\u7968\u6307\u8ba4\u771f\u51f6\uff0c\u6e38\u620f\u65f6\u957f\u7ea62\u5c0f\u65f6\uff0c\u8bf7\u63a7\u5236\u8ba8\u8bba\u65f6\u95f4\u3002",
+                "characterAssignmentNotes": "\u53ef\u901a\u8fc7\u968f\u673a\u62bd\u53d6\u6216\u73a9\u5bb6\u81ea\u9009\u5206\u914d\u89d2\u8272\uff0c\u786e\u4fdd\u51f6\u624b\u89d2\u8272\u4e0d\u88ab\u63d0\u524d\u66b4\u9732"
+            }
+        },
+        "playerHandbooks": [
+            {
+                "actContents": [
+                    {
+                        "actIndex": 1,
+                        "clueHints": [
+                            "\u6ce8\u610f\u4e66\u623f\u7684\u9c7c\u7ebf\u75d5\u8ff9",
+                            "\u67e5\u770b\u9057\u5631\u8349\u7a3f"
+                        ],
+                        "objectives": [
+                            "\u627e\u51fa\u771f\u51f6",
+                            "\u9690\u85cf\u590d\u4ec7\u610f\u56fe"
+                        ],
+                        "secretInfo": "\u4f60\u66fe\u8ba1\u5212\u4e3a\u59b9\u59b9\u590d\u4ec7\uff0c\u8d76\u5230\u4e66\u623f\u65f6\u6797\u67ab\u5df2\u6b7b",
+                        "personalNarrative": "\u4f60\u572821:20\u8def\u8fc7\u4e66\u623f\u770b\u5230\u6797\u67ab\uff0c\u4e4b\u540e\u4e00\u76f4\u5728\u5ba2\u5385\u559d\u9152\u770b\u7535\u5f71\uff0c\u76f4\u523000:10\u5218\u742a\u6765\u5230\u5ba2\u5385\u3002",
+                        "discussionSuggestions": [
+                            "\u8be2\u95ee\u5176\u4ed6\u4eba\u7684\u4e0d\u5728\u573a\u8bc1\u660e",
+                            "\u8ba8\u8bba\u5bc6\u5ba4\u7ebf\u7d22"
+                        ]
+                    },
+                    {
+                        "actIndex": 2,
+                        "clueHints": [
+                            "\u641c\u8bc1\u8f66\u5e93\u7684\u9c7c\u7ebf\u5377\u8f74",
+                            "\u67e5\u770b\u6797\u67ab\u7684\u624b\u673a\u77ed\u4fe1"
+                        ],
+                        "objectives": [
+                            "\u67e5\u660e\u59b9\u59b9\u771f\u76f8",
+                            "\u9501\u5b9a\u771f\u51f6"
+                        ],
+                        "secretInfo": "\u4f60\u672a\u5b9e\u9645\u52a8\u624b\u6740\u4eba",
+                        "personalNarrative": "\u4f60\u641c\u8bc1\u53d1\u73b0\u59b9\u59b9\u7684\u533b\u7597\u4e8b\u6545\u62a5\u544a\u4e0e\u6797\u67ab\u7684\u632a\u7528\u8bc1\u636e\uff0c\u6ce8\u610f\u5230\u5f20\u6d69\u8896\u53e3\u7684\u9c7c\u7ebf\u6b8b\u7559\u3002",
+                        "discussionSuggestions": [
+                            "\u8ba8\u8bba\u5f20\u6d69\u7684\u4e0d\u5728\u573a\u8bc1\u660e\u6f0f\u6d1e",
+                            "\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5"
+                        ]
+                    }
+                ],
+                "characterId": "char01",
+                "characterName": "\u9648\u9ed8",
+                "finaleContent": {
+                    "votingSuggestion": "\u6839\u636e\u8bc1\u636e\u6307\u5411\u5f20\u6d69\u6295\u7968",
+                    "closingStatementGuide": "\u53ef\u4ee5\u9648\u8ff0\u81ea\u5df1\u7684\u63a8\u7406\u8fc7\u7a0b\uff0c\u6307\u51fa\u5f20\u6d69\u7684\u4f5c\u6848\u8bc1\u636e"
+                },
+                "prologueContent": {
+                    "relationships": [
+                        "\u4e0e\u6797\u67ab\u6709\u65e7\u6028",
+                        "\u4e0e\u82cf\u665a\u662f\u540c\u5b66",
+                        "\u4e0e\u5f20\u6d69\u662f\u53d1\u5c0f",
+                        "\u4e0e\u5218\u742a\u662f\u5b66\u957f\u5b66\u59b9"
+                    ],
+                    "backgroundStory": "\u4f60\u662f32\u5c81\u79c1\u5bb6\u4fa6\u63a2\uff0c\u53d7\u6797\u9633\u59d4\u6258\u8c03\u67e5\u6797\u67ab\u632a\u7528\u516c\u6b3e\uff0c\u540c\u65f6\u6000\u7591\u59b9\u59b9\u7684\u533b\u7597\u4e8b\u6545\u4e0e\u6797\u67ab\u6709\u5173\u3002",
+                    "initialKnowledge": [
+                        "\u643a\u5e26\u4fa6\u63a2\u8bc1",
+                        "\u7b14\u8bb0\u672c\u5185\u6709\u59b9\u59b9\u7684\u533b\u7597\u4e8b\u6545\u8bb0\u5f55"
+                    ]
+                }
+            },
+            {
+                "actContents": [
+                    {
+                        "actIndex": 1,
+                        "clueHints": [
+                            "\u6ce8\u610f\u82b1\u56ed\u7684\u811a\u5370",
+                            "\u67e5\u770b\u9910\u5385\u7684\u9057\u5631\u8349\u7a3f"
+                        ],
+                        "objectives": [
+                            "\u627e\u51fa\u771f\u51f6",
+                            "\u9690\u85cf\u590d\u4ec7\u610f\u56fe"
+                        ],
+                        "secretInfo": "\u4f60\u77e5\u6653\u6797\u67ab\u632a\u7528\u7236\u4eb2\u624b\u672f\u8d39",
+                        "personalNarrative": "\u4f60\u572821:30\u524d\u5f80\u82b1\u56ed\u6563\u6b65\uff0c22:00\u8fd4\u56de\u522b\u5885\uff0c\u4e4b\u540e\u56de\u623f\u4f11\u606f\uff0c00:15\u542c\u5230\u4e66\u623f\u5f02\u54cd\u3002",
+                        "discussionSuggestions": [
+                            "\u8ba8\u8bba\u81ea\u5df1\u7684\u4e0d\u5728\u573a\u8bc1\u660e",
+                            "\u8be2\u95ee\u5176\u4ed6\u4eba\u7684\u884c\u8e2a"
+                        ]
+                    },
+                    {
+                        "actIndex": 2,
+                        "clueHints": [
+                            "\u641c\u8bc1\u8f66\u5e93\u7684\u9c7c\u7ebf\u5377\u8f74",
+                            "\u67e5\u770b\u6797\u67ab\u7684\u624b\u673a\u77ed\u4fe1"
+                        ],
+                        "objectives": [
+                            "\u4e3a\u7236\u62a5\u4ec7",
+                            "\u9501\u5b9a\u771f\u51f6"
+                        ],
+                        "secretInfo": "\u4f60\u66fe\u8ba1\u5212\u5411\u6797\u67ab\u7d22\u8981\u8d54\u507f",
+                        "personalNarrative": "\u4f60\u641c\u8bc1\u53d1\u73b0\u7236\u4eb2\u7684\u624b\u672f\u8d39\u8d26\u5355\uff0c\u6ce8\u610f\u5230\u5f20\u6d69\u7684\u9c7c\u7ebf\u6b8b\u7559\u3002",
+                        "discussionSuggestions": [
+                            "\u8ba8\u8bba\u5f20\u6d69\u7684\u52a8\u673a",
+                            "\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5"
+                        ]
+                    }
+                ],
+                "characterId": "char02",
+                "characterName": "\u82cf\u665a",
+                "finaleContent": {
+                    "votingSuggestion": "\u6839\u636e\u8bc1\u636e\u6307\u5411\u5f20\u6d69\u6295\u7968",
+                    "closingStatementGuide": "\u53ef\u4ee5\u9648\u8ff0\u81ea\u5df1\u53d1\u73b0\u7684\u624b\u672f\u8d39\u8bc1\u636e\uff0c\u6307\u51fa\u5f20\u6d69\u7684\u5acc\u7591"
+                },
+                "prologueContent": {
+                    "relationships": [
+                        "\u4e0e\u6797\u67ab\u6709\u65e7\u6028",
+                        "\u4e0e\u9648\u9ed8\u662f\u540c\u5b66",
+                        "\u4e0e\u5f20\u6d69\u662f\u6797\u67ab\u53d1\u5c0f",
+                        "\u4e0e\u5218\u742a\u662f\u670b\u53cb"
+                    ],
+                    "backgroundStory": "\u4f60\u662f\u82b1\u827a\u5e08\uff0c\u66fe\u662f\u6797\u67ab\u524d\u5973\u53cb\uff0c\u7236\u4eb2\u7684\u624b\u672f\u8d39\u88ab\u6797\u67ab\u632a\u7528\u5bfc\u81f4\u53bb\u4e16\u3002",
+                    "initialKnowledge": [
+                        "\u643a\u5e26\u82b1\u827a\u526a",
+                        "\u7236\u4eb2\u7684\u624b\u672f\u8d39\u8d26\u5355"
+                    ]
+                }
+            },
+            {
+                "actContents": [
+                    {
+                        "actIndex": 1,
+                        "clueHints": [
+                            "\u6ce8\u610f\u8f66\u5e93\u7684\u9c7c\u7ebf",
+                            "\u9500\u6bc1\u81ea\u5df1\u7684\u75d5\u8ff9"
+                        ],
+                        "objectives": [
+                            "\u9690\u85cf\u632a\u7528\u8bc1\u636e",
+                            "\u4e0d\u88ab\u6307\u8ba4\u4e3a\u51f6\u624b"
+                        ],
+                        "secretInfo": "\u4f60\u632a\u7528\u4e86\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\uff0c\u88ab\u6797\u67ab\u6293\u4f4f\u628a\u67c4",
+                        "personalNarrative": "\u4f60\u572821:30\u524d\u5f80\u8f66\u5e93\u53d6\u7ea2\u9152\uff0c\u5b9e\u9645\u662f\u51c6\u5907\u9c7c\u7ebf\u548c\u88c1\u7eb8\u5200\uff0c22:00\u8fd4\u56de\u522b\u5885\u3002",
+                        "discussionSuggestions": [
+                            "\u63d0\u4f9b\u865a\u5047\u4e0d\u5728\u573a\u8bc1\u660e",
+                            "\u8f6c\u79fb\u5176\u4ed6\u73a9\u5bb6\u7684\u6ce8\u610f\u529b"
+                        ]
+                    },
+                    {
+                        "actIndex": 2,
+                        "clueHints": [
+                            "\u4e0d\u8981\u8ba9\u5176\u4ed6\u73a9\u5bb6\u53d1\u73b0\u81ea\u5df1\u7684\u8896\u53e3\u9c7c\u7ebf",
+                            "\u9500\u6bc1\u6797\u67ab\u7684\u7535\u8111\u8bc1\u636e"
+                        ],
+                        "objectives": [
+                            "\u9003\u8131\u6cd5\u5f8b\u5236\u88c1",
+                            "\u9690\u85cf\u8bc1\u636e"
+                        ],
+                        "secretInfo": "\u4f60\u5c31\u662f\u6740\u5bb3\u6797\u67ab\u7684\u771f\u51f6",
+                        "personalNarrative": "\u4f60\u9700\u8981\u9690\u85cf\u81ea\u5df1\u7684\u9c7c\u7ebf\u6b8b\u7559\uff0c\u9500\u6bc1\u6797\u67ab\u7684\u632a\u7528\u8bc1\u636e\u3002",
+                        "discussionSuggestions": [
+                            "\u8bef\u5bfc\u73a9\u5bb6\u6307\u5411\u5176\u4ed6\u5acc\u7591\u4eba",
+                            "\u5426\u8ba4\u81ea\u5df1\u7684\u4f5c\u6848\u53ef\u80fd"
+                        ]
+                    }
+                ],
+                "characterId": "char03",
+                "characterName": "\u5f20\u6d69",
+                "finaleContent": {
+                    "votingSuggestion": "\u5c3d\u91cf\u8bef\u5bfc\u73a9\u5bb6\u6307\u5411\u5176\u4ed6\u89d2\u8272",
+                    "closingStatementGuide": "\u53ef\u4ee5\u5c1d\u8bd5\u8fa9\u89e3\uff0c\u8f6c\u79fb\u73a9\u5bb6\u6ce8\u610f\u529b"
+                },
+                "prologueContent": {
+                    "relationships": [
+                        "\u4e0e\u6797\u67ab\u6709\u5229\u76ca\u51b2\u7a81",
+                        "\u4e0e\u9648\u9ed8\u662f\u540c\u5b66",
+                        "\u4e0e\u82cf\u665a\u662f\u6797\u67ab\u524d\u53cb",
+                        "\u4e0e\u5218\u742a\u662f\u6797\u67ab\u5b66\u59b9"
+                    ],
+                    "backgroundStory": "\u4f60\u662f\u5f8b\u5e08\uff0c\u6797\u67ab\u53d1\u5c0f\uff0c\u632a\u7528\u5f8b\u6240\u5ba2\u6237\u8d44\u91d1\u88ab\u6797\u67ab\u638c\u63e1\u8bc1\u636e\u3002",
+                    "initialKnowledge": [
+                        "\u643a\u5e26\u5f8b\u5e08\u8bc1",
+                        "\u5f8b\u6240\u632a\u7528\u8bc1\u636e\u6587\u4ef6"
+                    ]
+                }
+            },
+            {
+                "actContents": [
+                    {
+                        "actIndex": 1,
+                        "clueHints": [
+                            "\u6ce8\u610f\u81ea\u5df1\u7684\u5b89\u7720\u836f",
+                            "\u67e5\u770b\u6797\u67ab\u7684\u5a01\u80c1\u77ed\u4fe1"
+                        ],
+                        "objectives": [
+                            "\u627e\u51fa\u771f\u51f6",
+                            "\u9690\u85cf\u590d\u4ec7\u610f\u56fe"
+                        ],
+                        "secretInfo": "\u4f60\u77e5\u6653\u6797\u67ab\u6cc4\u9732\u4f60\u7684\u9690\u79c1",
+                        "personalNarrative": "\u4f60\u572821:30\u8fd4\u56de\u5ba2\u623f\uff0c22:30\u524d\u5f80\u53a8\u623f\u5012\u6c34\uff0c\u8def\u8fc7\u4e66\u623f\u542c\u5230\u7ffb\u4e66\u58f0\uff0c00:10\u56e0\u5931\u7720\u524d\u5f80\u5ba2\u5385\u3002",
+                        "discussionSuggestions": [
+                            "\u8ba8\u8bba\u81ea\u5df1\u7684\u4e0d\u5728\u573a\u8bc1\u660e",
+                            "\u8be2\u95ee\u5176\u4ed6\u4eba\u7684\u884c\u8e2a"
+                        ]
+                    },
+                    {
+                        "actIndex": 2,
+                        "clueHints": [
+                            "\u641c\u8bc1\u8f66\u5e93\u7684\u9c7c\u7ebf\u5377\u8f74",
+                            "\u67e5\u770b\u6797\u67ab\u7684\u624b\u673a\u77ed\u4fe1"
+                        ],
+                        "objectives": [
+                            "\u8ba9\u6797\u67ab\u4ed8\u51fa\u4ee3\u4ef7",
+                            "\u9501\u5b9a\u771f\u51f6"
+                        ],
+                        "secretInfo": "\u4f60\u66fe\u8ba1\u5212\u62a5\u590d\u6797\u67ab",
+                        "personalNarrative": "\u4f60\u641c\u8bc1\u53d1\u73b0\u6797\u67ab\u7684\u5a01\u80c1\u77ed\u4fe1\uff0c\u6ce8\u610f\u5230\u5f20\u6d69\u7684\u9c7c\u7ebf\u6b8b\u7559\u3002",
+                        "discussionSuggestions": [
+                            "\u8ba8\u8bba\u5f20\u6d69\u7684\u52a8\u673a",
+                            "\u7834\u89e3\u5bc6\u5ba4\u624b\u6cd5"
+                        ]
+                    }
+                ],
+                "characterId": "char04",
+                "characterName": "\u5218\u742a",
+                "finaleContent": {
+                    "votingSuggestion": "\u6839\u636e\u8bc1\u636e\u6307\u5411\u5f20\u6d69\u6295\u7968",
+                    "closingStatementGuide": "\u53ef\u4ee5\u9648\u8ff0\u81ea\u5df1\u53d1\u73b0\u7684\u9690\u79c1\u6cc4\u9732\u8bc1\u636e\uff0c\u6307\u51fa\u5f20\u6d69\u7684\u5acc\u7591"
+                },
+                "prologueContent": {
+                    "relationships": [
+                        "\u4e0e\u6797\u67ab\u6709\u65e7\u6028",
+                        "\u4e0e\u9648\u9ed8\u662f\u5b66\u957f\u5b66\u59b9",
+                        "\u4e0e\u82cf\u665a\u662f\u670b\u53cb",
+                        "\u4e0e\u5f20\u6d69\u662f\u6797\u67ab\u53d1\u5c0f"
+                    ],
+                    "backgroundStory": "\u4f60\u662f\u62a4\u58eb\uff0c\u6797\u67ab\u5b66\u59b9\uff0c\u9690\u79c1\u88ab\u6797\u67ab\u6cc4\u9732\u5bfc\u81f4\u4e22\u5de5\u4f5c\u3001\u88ab\u9000\u5a5a\u3002",
+                    "initialKnowledge": [
+                        "\u643a\u5e26\u62a4\u58eb\u5e3d",
+                        "\u624b\u673a\u5185\u7684\u6797\u67ab\u5a01\u80c1\u77ed\u4fe1"
+                    ]
+                }
+            }
+        ]
+    }
+}
